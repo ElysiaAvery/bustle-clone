@@ -1,0 +1,26 @@
+{{#if editArticle}}
+  <form>
+    <div class="form-group">
+      <label for="title">Title: </label>
+      {{input value=title id="title" placeholder=article.title}}
+    </div>
+
+    <div class="form-group">
+      <label for="author">Author: </label>
+      {{input value=author id="author" placeholder=article.author}}
+    </div>
+
+    <div class="form-group">
+      <label for="story">Story: </label>
+      {{textarea value=story id="story" placeholder=article.story}}
+    </div>
+
+    <div class="form-group">
+      <label for="image">Image: </label>
+      {{input value=image id="image" placeholder=article.image}}
+    </div>
+    <button {{action 'updateArticle' article}}>Done Editing</button>
+  </form>
+{{else}}
+  <button {{action 'editFormShow'}}>Edit</button>
+{{/if}}

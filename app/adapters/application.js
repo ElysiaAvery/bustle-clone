@@ -6,4 +6,5 @@ export default FirebaseAdapter.extend({
     responsiveWidth: false,
     zIndex: 2,
   },
+
 });

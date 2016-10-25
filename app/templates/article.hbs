@@ -4,4 +4,6 @@
 <p>{{model.author}}</p>
 <p>{{model.story}}</p>
 
+{{edit-article article=model updateArticle="updateArticle"}}
+
 <button {{action 'deleteArticle' model}}>Delete</button>
