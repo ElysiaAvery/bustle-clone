@@ -1,0 +1,38 @@
+@import "ember-side-menu";
+
+body {
+  background-color: #F7F7F7;
+  color: #4A4A4A;
+}
+
+img {
+  width: 100%;
+  margin-left: 10%;
+  box-shadow: 10px 10px 0px lightgrey;
+}
+
+.navbar-brand {
+  margin-left: 38%;
+}
+
+#hamburger {
+  font-size: 200%;
+}
+
+.image {
+  position: relative;
+  width: 100%;
+  margin-top: 10%;
+}
+
+h3 {
+   position: absolute;
+   top: 300px;
+   left: 37%;
+   width: 50%;
+   text-align: center;
+   background-color: white;
+   padding-top: 7%;
+   padding-bottom: 7%;
+
+}
