@@ -1,47 +1,51 @@
 <div class= "container">
   <header>
-    <nav class="navbar-left">
-      {{#side-menu-toggle}}
-        <span id="hamburger" class="glyphicon glyphicon-menu-hamburger"></span>
-        {{#side-menu}}
-          <ul class="nav">
-              {{#side-menu-link-to "index"}}
-                Homepage
-              {{/side-menu-link-to}}
-              <br>
-              {{#side-menu-link-to "index"}}
-                News
-              {{/side-menu-link-to}}
-              <br>
-              {{#side-menu-link-to "index"}}
-                Entertainment
-              {{/side-menu-link-to}}
-              <br>
-              {{#side-menu-link-to "index"}}
-                Fashion &amp; Beauty
-              {{/side-menu-link-to}}
-              <br>
-              {{#side-menu-link-to "index"}}
-                Lifestyle
-              {{/side-menu-link-to}}
-              <br>
-              {{#side-menu-link-to "index"}}
-                Books
-              {{/side-menu-link-to}}
-              <br>
-              {{#side-menu-link-to "index"}}
-                Flowcharts
-              {{/side-menu-link-to}}
-          </ul>
-        {{/side-menu}}
-      {{/side-menu-toggle}}
-    </nav>
-    <nav class="navbar-default">
-      <a class="navbar-brand" href="#">Bustle</a>
-    </nav>
-    <nav class="navbar-form navbar-right navbar-static-top" role="search">
-      <button type="submit" class="btn btn-default"><a href="#"><span class="glyphicon glyphicon-search"></span></a></button>
-    </nav>
+    {{#sticky-container options=myStickyOptions}}
+    <div class="nav">
+      <nav class=" navbar navbar-left navbar-static-top">
+        {{#side-menu-toggle}}
+          <span id="hamburger" class="glyphicon glyphicon-menu-hamburger"></span>
+          {{#side-menu}}
+            <ul class="nav-list">
+                {{#side-menu-link-to "index"}}
+                  Homepage
+                {{/side-menu-link-to}}
+                <br>
+                {{#side-menu-link-to "index"}}
+                  News
+                {{/side-menu-link-to}}
+                <br>
+                {{#side-menu-link-to "index"}}
+                  Entertainment
+                {{/side-menu-link-to}}
+                <br>
+                {{#side-menu-link-to "index"}}
+                  Fashion &amp; Beauty
+                {{/side-menu-link-to}}
+                <br>
+                {{#side-menu-link-to "index"}}
+                  Lifestyle
+                {{/side-menu-link-to}}
+                <br>
+                {{#side-menu-link-to "index"}}
+                  Books
+                {{/side-menu-link-to}}
+                <br>
+                {{#side-menu-link-to "index"}}
+                  Flowcharts
+                {{/side-menu-link-to}}
+            </ul>
+          {{/side-menu}}
+        {{/side-menu-toggle}}
+      </nav>
+      <nav class="navbar-default">
+        <a class="navbar-brand" href="#">Bustle</a>
+      </nav>
+      <nav class="navbar-form navbar-right navbar-static-top" role="search">
+        <button type="submit" class="btn btn-default"><a href="#"><span class="glyphicon glyphicon-search"></span></a></button>
+      </nav>
+    </div>
+    {{/sticky-container}}
   </header>
   {{content-backdrop}}
     {{outlet}}

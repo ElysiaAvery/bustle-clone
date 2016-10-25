@@ -1,5 +1,13 @@
 @import "ember-side-menu";
 
+.nav {
+  background-color: white;
+  padding-left: 10%;
+  padding-right: 10%;
+  margin-left: -29%;
+  margin-right: -29%;
+}
+
 body {
   background-color: #F7F7F7;
   color: #4A4A4A;
@@ -7,8 +15,9 @@ body {
 
 img {
   width: 100%;
-  margin-left: 10%;
-  box-shadow: 10px 10px 0px lightgrey;
+  // margin-left: 10%;
+  box-shadow: 12px 12px 0px lightgrey;
+  z-index: -2;
 }
 
 .navbar-brand {
@@ -20,6 +29,7 @@ img {
 }
 
 .image {
+  z-index: -2;
   position: relative;
   width: 100%;
   margin-top: 10%;
@@ -27,12 +37,19 @@ img {
 
 h3 {
    position: absolute;
-   top: 300px;
-   left: 37%;
+   top: 400px;
+   left: 25%;
    width: 50%;
    text-align: center;
    background-color: white;
    padding-top: 7%;
    padding-bottom: 7%;
+}
 
+#sticky-container {
+  width: 100%;
+}
+
+.story-image {
+  margin-bottom: 6%;
 }
